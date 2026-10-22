@@ -2,9 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [development]
-  pull_request:
-    branches: [development]
+    branches: \[main\]
 
 jobs:
   lint:
@@ -66,3 +64,4 @@ jobs:
       - name: Deploy static site
         run: |
           echo "Deploying static site to hosting provider"
+
